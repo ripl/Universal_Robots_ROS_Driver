@@ -141,7 +141,7 @@ catkin_install_python(PROGRAMS scripts/tool_communication scripts/test_move
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY config launch resources
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION} PATTERN "setup_assistant.launch" EXCLUDE)
 
 
 install(DIRECTORY include/${PROJECT_NAME}/
